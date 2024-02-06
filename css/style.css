@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #A50044;
+}
+
+
+.hrader__title {
+    text-align: center;
+    color: #EDBB00;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+
+/* main */
+
+.front-page__title {
+    background: linear-gradient(278deg, rgba(165, 0, 68, 1) 41%, rgba(0, 77, 152, 1) 81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    font-family: 'Black Ops One', system-ui;
+    text-align: center;
+}
+
+.front-page__title span {
+    font-size: 250px;
+    -webkit-text-fill-color: #EDBB00;
+}
+
+.front-page {
+    margin-top: 6%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    background: url("../img/bk.png") no-repeat center center / cover, url("../img/bk-messi.jpeg") no-repeat center center / cover;
+}
+
+/* autobiography */
+.autobiography__block {
+    padding: 25px 0px;
+}
+
+.autobiography__title {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #A50044;
+    font-size: 32px;
+}
+
+.autobiography__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-indent: 15px;
+}
+
+/* adaptive */
+@media screen and (max-width: 1024px) {
+    .hrader__title {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hrader__title {
+        font-size: 24px;
+    }
+
+    .front-page__title {
+        font-size: 80px;
+    }
+
+    .front-page__title span {
+        font-size: 200px;
+    }
+}
